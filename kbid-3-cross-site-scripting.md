@@ -55,7 +55,7 @@ foobar"></
 
 ![](.gitbook/assets/screen-shot-2019-01-29-at-13.02.25.png)
 
-As you can see the application did not encode or blacklisted any of the dangerous HTML characters. Now lets try the XSS payload to see if this also is reflected back withouth any escaping or blacklist filtering.
+As you can see the application did not encode or blacklisted any of the dangerous HTML characters. Now lets try the XSS payload to see if this also is reflected back without any escaping or blacklist filtering.
 
 ```text
 foobar"><script>alert(123)</script>
@@ -67,7 +67,7 @@ Again the application is not encoding or blacklisted any of the dangerous HTML c
 
 ![](.gitbook/assets/screen-shot-2019-01-29-at-13.08.38.png)
 
-As you can see in Chrome it didn't work because of the XSS Auditor setting that is enforced. This is an special browser header that can be set do add an additinal layer of security to the application. Let's use Firefox to see if we are able to trigger the XSS with our payload there.
+As you can see in Chrome it didn't work because of the XSS Auditor setting that is enforced. This is an special browser header that can be set do add an additional layer of security to the application. Let's use Firefox to see if we are able to trigger the XSS with our payload there.
 
 ![](.gitbook/assets/screen-shot-2019-01-29-at-13.05.36.png)
 
